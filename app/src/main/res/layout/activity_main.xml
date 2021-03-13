@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:id="@+id/llInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/etLatitude"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_marginEnd="20dp"
+                android:autofillHints="Latitude"
+                android:inputType="numberDecimal"
+                android:background="@drawable/input_bg"
+                android:text="39.0599"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/etLongitude"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:autofillHints="Longitude"
+                android:inputType="numberDecimal"
+                android:background="@drawable/input_bg"
+                android:text="-77.1230"
+                tools:ignore="LabelFor"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNav"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Navigate"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

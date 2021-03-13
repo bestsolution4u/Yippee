@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.here.yippee">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yippee">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DownloadActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".LanguageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MapActivity"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="p19tusKSnfmVf1NaU8hH" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="XT739jTYYyJNY2kI_tsmRg" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="L9r90wa2e7O5ALwz9f4mpItPmr7GDhndufgMa8HicYZOzIsV5VBLdKKZ64NQpqyTMLc3xKmYMUjMHtEz8QsUyWm/2YLW5DXmS9BuweVsU6vgCUOwOqgbpRUn1ZahnTy32lyxt2oXo7Ok/iOElIVwlhb+itWhS5dmB/iU+2XjE0SDvj9psecKqmtGVMNl1KiExa1Rv7Ibxw4K5DKTuXK3vKKkwXQ6r1Ty+E3nZWrvRoB+0KrYRejI2SwQlUsFn+3UvcIIQWpsFFDmv7kJxpdJsWKO7SJGnxtlvWIoQDsESk7dGsKj5WilmRJU/UdNXawhVi9b9fL6c23ZUMKfGpUwZCjUsmUAYvVAloAsmOctDkFDpd7h7T/JWFH28Jtee/5IpDr2hGMneEC5KLcM5jUPJqwMiJgFQf24HZTJb59WarQzZWusxJfq8m9wJii1sLFdYNvEIg2bgoAVA5UZu1/2+gJVDx3mEC9psgLesuptRbKBkV12TnVX/VIGTdW/xdx+gIe6EHAKvc/r7dAgie0VfeXjCsazBdtS0LgrRpDQBfUMlolw29Bbxxqwrw4/2dwTppsfi1nOeFwMLa9gaaH0IgzKcN42A4JBXgRV88DN/U1DGYfDxglXV+SxF6I0s/O2P52kTtKQo+aBMoRtVhLZ/Tan65/NdOSFbk0c1i/XrZc=" />
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:exported="false"
+            android:label="SpeedLimitService">
+            <intent-filter>
+                <action android:name="com.here.android.mpa.service.MapService.v3" />
+            </intent-filter>
+        </service>
+        <service android:name=".ForegroundService" />
+        <service
+            android:enabled="true"
+            android:exported="false"
+            android:name="com.here.services.internal.LocationService"
+            android:process=":remote" />
+        <receiver
+            android:name="com.here.services.internal.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>
