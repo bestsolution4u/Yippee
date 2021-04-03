@@ -80,7 +80,7 @@ public class MapActivity extends AppCompatActivity implements PositioningManager
     private String LOGTAG = "Yippee-MapActivity";
 
     // permission related
-    private final static int REQUEST_CODE_ASK_PERMISSIONS = 1;
+    private final static int REQUEST_CODE_ASK_PERMISSIONS = 2222;
     private static final String[] RUNTIME_PERMISSIONS = {
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,

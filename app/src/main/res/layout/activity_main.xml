@@ -5,52 +5,171 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YIPPEE LOGO"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAIN SCREEN"
+                android:textSize="24sp"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="#ff0000"/>
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bbbbbb" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingVertical="30dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/location_item"
+                android:paddingHorizontal="20dp"
+                tools:itemCount="10"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bbbbbb" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="30dp">
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@drawable/bg_button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="MAP"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@drawable/bg_button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="ALL"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnAttractions"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@drawable/bg_button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="ATTRACTIONS"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnShopping"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@drawable/bg_button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="SHOPPING"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnEmergency"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:background="@drawable/bg_button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="EMERGENCY"/>
+        </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
         tools:ignore="UselessParent">
+
         <LinearLayout
             android:id="@+id/llInput"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/etLatitude"
                 android:layout_width="160dp"
                 android:layout_height="40dp"
-                android:gravity="center"
-                android:maxLines="1"
                 android:layout_marginEnd="20dp"
                 android:autofillHints="Latitude"
-                android:inputType="numberDecimal"
                 android:background="@drawable/input_bg"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
                 android:text="39.0599"
                 tools:ignore="LabelFor" />
+
             <EditText
                 android:id="@+id/etLongitude"
                 android:layout_width="160dp"
                 android:layout_height="40dp"
-                android:gravity="center"
-                android:maxLines="1"
                 android:autofillHints="Longitude"
-                android:inputType="numberDecimal"
                 android:background="@drawable/input_bg"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
                 android:text="-77.1230"
-                tools:ignore="LabelFor"/>
+                tools:ignore="LabelFor" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btnNav"
             android:layout_width="160dp"
             android:layout_height="60dp"
-            android:text="Navigate"
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/primary"
-            android:textColor="@color/white"/>
+            android:text="Navigate"
+            android:textColor="@color/white" />
     </LinearLayout>
 </RelativeLayout>

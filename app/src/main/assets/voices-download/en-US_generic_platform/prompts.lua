@@ -388,7 +388,7 @@ commands_common = { -- Common commands for car & ped navigation.
 	["bl0p0ed0"] = "After !DIST! !UNIT! keep right !NG_COMMAND_1! , take exit !EXIT_NUMBER! !SIGNPOST!",
 	-- 139: and then immediately enter the urban motorway !NG_COMMAND_2!
 	["j000i000"] = "and then immediately enter the expressway !NG_COMMAND_2!",
-	-- 140: At the end of the road turn left !NG_COMMAND_1! , enter the motorway !STREET!
+	-- 120: At the end of the road turn left !NG_COMMAND_1! , enter the motorway !STREET!
 	["c00vfa00"] = "At the end of the road turn left !NG_COMMAND_1! , enter the highway !STREET!",
 	-- 141: and then enter the urban motorway !NG_COMMAND_2!
 	["h000i000"] = "and then enter the expressway !NG_COMMAND_2!",

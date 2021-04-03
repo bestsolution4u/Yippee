@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "way_id": "79",
+      "way_type": "1",
+      "way_name": "Cittadel",
+      "way_shortDesc": null,
+      "way_description": "Desc2",
+      "way_lat": "36.04604928819296",
+      "way_lng": "14.238703424427657",
+      "imgs": [
+        {
+          "url": "img1.jpg"
+        },
+        {
+          "url": "img2.jpg"
+        },
+        {
+          "url": "img3.jpg"
+        }
+      ]
+    },
+    {
+      "way_id": "80",
+      "way_type": "2",
+      "way_name": "Cittadel2",
+      "way_shortDesc": null,
+      "way_description": "Desc2",
+      "way_lat": "36.04604928819296",
+      "way_lng": "14.238703424427657",
+      "imgs": [
+        {
+          "url": "img4.jpg"
+        },
+        {
+          "url": "img5.jpg"
+        },
+        {
+          "url": "img6.jpg"
+        }
+      ]
+    }
+  ]
+}

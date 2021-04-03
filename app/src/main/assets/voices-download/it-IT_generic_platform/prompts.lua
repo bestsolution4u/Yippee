@@ -440,7 +440,7 @@ commands_common = { -- Common commands for car & ped navigation.
 	["bl0p0ed0"] = "Fra !DIST! !UNIT! mantenersi a destra !NG_COMMAND_1!, prendere l'uscita !EXIT_NUMBER! !SIGNPOST!",
 	-- 139: and then immediately enter the urban motorway !NG_COMMAND_2!
 	["j000i000"] = "e poi subito dopo prendere la superstrada !NG_COMMAND_2!",
-	-- 140: At the end of the road turn left !NG_COMMAND_1! , enter the motorway !STREET!
+	-- 120: At the end of the road turn left !NG_COMMAND_1! , enter the motorway !STREET!
 	["c00vfa00"] = "Alla fine della strada svoltare a sinistra !NG_COMMAND_1!, prendere l'autostrada !STREET!",
 	-- 141: and then enter the urban motorway !NG_COMMAND_2!
 	["h000i000"] = "e quindi prendere la superstrada, !NG_COMMAND_2!",
