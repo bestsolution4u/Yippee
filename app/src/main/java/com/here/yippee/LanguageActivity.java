@@ -56,7 +56,6 @@ public class LanguageActivity extends AppCompatActivity {
                 voices.add(voiceSkin);
             }
         }
-        Log.e(LOGTAG, "Languges: " + voices.size());
         VoiceSkinsAdapter adapter = new VoiceSkinsAdapter(this, voices);
         rvVoiceList.setAdapter(adapter);
     }
@@ -70,7 +69,6 @@ public class LanguageActivity extends AppCompatActivity {
         VoiceSkinsAdapter(Context context, List<VoiceSkin> voiceSkins) {
             m_voiceSkins = voiceSkins;
             m_inflater = LayoutInflater.from(context);
-            Log.e("Yippee", "Constructur");
             VoiceSkin selectedVoiceSkin =
                     NavigationManager.getInstance().getVoiceGuidanceOptions().getVoiceSkin();
             if (selectedVoiceSkin != null) {
@@ -83,7 +81,6 @@ public class LanguageActivity extends AppCompatActivity {
         @NonNull
         @Override
         public VoiceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            Log.e("Yippee", "OnCreateViewHolder");
             View view = m_inflater.inflate(R.layout.voice_skin_item, parent, false);
             return new VoiceViewHolder(view);
         }
@@ -108,7 +105,6 @@ public class LanguageActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            Log.e("Yippee", "Recycler View size: " + m_voiceSkins.size());
             return m_voiceSkins.size();
         }
 

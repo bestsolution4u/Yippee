@@ -3,7 +3,9 @@ package com.here.yippee.model;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ImageModel {
+import java.io.Serializable;
+
+public class ImageModel implements Serializable {
     private String url;
 
     public ImageModel() {

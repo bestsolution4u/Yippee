@@ -148,7 +148,6 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }
         } catch (IOException ex) {
-            Log.e("tag", "I/O Exception", ex);
         }
     }
 
@@ -173,7 +172,6 @@ public class SplashActivity extends AppCompatActivity {
             out.close();
             out = null;
         } catch (Exception e) {
-            Log.e("tag", e.getMessage());
         }
 
     }

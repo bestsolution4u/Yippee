@@ -32,11 +32,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-    EditText etLat, etLng;
-    Button btnNav;
-
-
     RecyclerView rvList;
     LocationAdapter rvListAdapter;
     Button btnMap, btnAll, btnAttractions, btnShopping, btnEmergency;
@@ -48,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onLocationChanged(final Location location) {
             mLocation = location;
-            Log.e("Location", "Updated");
             if (rvListAdapter != null) {
                 rvListAdapter.setLocation(location);
                 rvListAdapter.notifyDataSetChanged();
@@ -80,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                     locations.add(new LocationModel().fromJson(items.getJSONObject(i)));
                 }
                 if (locations != null && !locations.isEmpty()) setupLocationList();
-                Log.e("JSON", "" + obj.length());
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -88,29 +81,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setElements() {
-        etLat = findViewById(R.id.etLatitude);
-        etLng = findViewById(R.id.etLongitude);
-        btnNav = findViewById(R.id.btnNav);
-        btnNav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (etLat.getText().toString().equals("") || etLng.getText().toString().equals("")) {
-                    Toast.makeText(MainActivity.this, "Location is required.", Toast.LENGTH_SHORT).show();
-                } else {
-                    Intent intent = new Intent(MainActivity.this, MapActivity.class);
-                    Bundle b = new Bundle();
-                    b.putDouble("latitude", Double.parseDouble(etLat.getText().toString())); //Your id
-                    b.putDouble("longitude", Double.parseDouble(etLng.getText().toString())); //Your id
-                    intent.putExtras(b); //Put your id to your next Intent
-                    startActivity(intent);
-                }
-            }
-        });
         btnMap = findViewById(R.id.btnMap);
         btnMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MainActivity.this, MapLocationActivity.class));
             }
         });
         btnAll = findViewById(R.id.btnAll);

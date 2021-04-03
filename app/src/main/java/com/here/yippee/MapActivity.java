@@ -65,6 +65,7 @@ import com.here.msdkui.guidance.GuidanceManeuverListener;
 import com.here.msdkui.guidance.GuidanceManeuverPresenter;
 import com.here.msdkui.guidance.GuidanceManeuverView;
 import com.here.yippee.helper.PermissionHelper;
+import com.here.yippee.util.ConnectionUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -318,7 +319,7 @@ public class MapActivity extends AppCompatActivity implements PositioningManager
 
                 // load offline map
                 coreRouter = new CoreRouter();
-                if (isNetworkAvailable(this)) {
+                if (ConnectionUtil.isNetworkAvailable(this)) {
                     coreRouter.setConnectivity(CoreRouter.Connectivity.DEFAULT);
                 } else {
                     coreRouter.setConnectivity(CoreRouter.Connectivity.OFFLINE);
@@ -469,11 +470,6 @@ public class MapActivity extends AppCompatActivity implements PositioningManager
             mPendingUpdate.run();
             mPendingUpdate = null;
         }
-    }
-
-    public boolean isNetworkAvailable(Context context) {
-        ConnectivityManager connectivityManager = ((ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE));
-        return connectivityManager.getActiveNetworkInfo() != null && connectivityManager.getActiveNetworkInfo().isConnected();
     }
 
     private void populateSpeed(int currentSpeed, int currentSpeedLimit) {

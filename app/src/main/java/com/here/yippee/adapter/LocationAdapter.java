@@ -1,5 +1,6 @@
 package com.here.yippee.adapter;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.here.yippee.DetailActivity;
 import com.here.yippee.R;
 import com.here.yippee.model.LocationModel;
 import com.here.yippee.util.LocationUtil;
@@ -43,7 +45,9 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
         holder.llLocationWrapper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "ItemClicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(v.getContext(), DetailActivity.class);
+                intent.putExtra("Location", wayLocation);
+                v.getContext().startActivity(intent);
             }
         });
         if (wayLocation.getImgs() != null) {

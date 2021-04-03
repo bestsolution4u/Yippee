@@ -96,7 +96,6 @@ class MapListView {
                 } else {
                     Toast.makeText(m_activity, "Downloading: " + clickedMapPackage.getTitle() + ", ID: " + clickedMapPackage.getId(),
                             Toast.LENGTH_SHORT).show();
-                    Log.e("Yippee", "Downloading Map Data: " + clickedMapPackage.getTitle() + ", ID: " + clickedMapPackage.getId());
                 }
             }
         }

@@ -4,9 +4,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class LocationModel {
+public class LocationModel implements Serializable {
     private String wayId, wayType, wayName, wayShortDesc, wayDesc;
     private double wayLat, wayLng;
     private ArrayList<ImageModel> imgs;
