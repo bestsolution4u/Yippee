@@ -504,11 +504,11 @@ public class MapActivity extends AppCompatActivity implements PositioningManager
         navigationManager.addNavigationManagerEventListener(new WeakReference<NavigationManager.NavigationManagerEventListener>(navigationManagerEventListener));
 
         VoiceSkin selectedVoiceSkin = navigationManager.getVoiceGuidanceOptions().getVoiceSkin();
-        if (selectedVoiceSkin.getId() > 250) {
+        if (selectedVoiceSkin.getId() % 1000 != 0) {
             VoiceCatalog catalog = VoiceCatalog.getInstance();
             List<VoiceSkin> voiceSkins = catalog.getLocalVoiceSkins();
             for (VoiceSkin voiceSkin : voiceSkins) {
-                if (voiceSkin.getId() == 206) {
+                if (voiceSkin.getId() == 1000) {
                     navigationManager.getVoiceGuidanceOptions().setVoiceSkin(voiceSkin);
                     break;
                 }

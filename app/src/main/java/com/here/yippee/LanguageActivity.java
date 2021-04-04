@@ -52,7 +52,7 @@ public class LanguageActivity extends AppCompatActivity {
 
         for (VoiceSkin voiceSkin : voiceCatalog.getLocalVoiceSkins()) {
             //voices.add(voiceSkin);
-            if (voiceSkin.getId() < 250) {
+            if (voiceSkin.getId() % 1000 == 0) {
                 voices.add(voiceSkin);
             }
         }
@@ -74,7 +74,7 @@ public class LanguageActivity extends AppCompatActivity {
             if (selectedVoiceSkin != null) {
                 m_selectedId = selectedVoiceSkin.getId();
             } else {
-                m_selectedId = 206;
+                m_selectedId = 1000;
             }
         }
 
