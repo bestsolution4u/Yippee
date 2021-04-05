@@ -3,11 +3,11 @@
     {
       "way_id": "79",
       "way_type": "1",
-      "way_name": "Cittadel",
-      "way_shortDesc": null,
-      "way_description": "Desc2",
-      "way_lat": "36.04604928819296",
-      "way_lng": "14.238703424427657",
+      "way_name": "Convenience",
+      "way_shortDesc": "The towering Cittadella sits high above the city of Victoria in Gozo.It’s the first thing you’ll see if you’re visiting the city. Discover more to learn about the magnificent structure",
+      "way_description": "Towering high above Victoria, the capital city of Gozo, sits a majestic fortified town known locally as the Cittadella. This prominent landmark is the first thing you see in Victoria. If you’re booking flights to Malta add this to your to-do list, you won’t be disappointed. Embark on an adventure through 3000 years of history!\n\n\n\nIf you are planning to visit the Cittadella, you’ll be pleasantly surprised to hear that it’s now looking better than it ever has. An extensive 5 year restoration project of the site was completed earlier this year leaving the Cittadella looking absolutely amazing. This massive project was undertaken to clean up the ruins and restore many of the buildings to their former glory. Interestingly, the excavation works unearthed many previously unseen parts of the Cittadella such as the original entrance and many underground tunnels. The Cittadella, in its renovated state, now stands proudly in silent watch over Victoria.",
+      "way_lat": "35.934",
+      "way_lng": "14.4145",
       "imgs": [
         {
           "url": "img1.jpg"
@@ -23,20 +23,80 @@
     {
       "way_id": "80",
       "way_type": "2",
-      "way_name": "Cittadel2",
-      "way_shortDesc": null,
-      "way_description": "Desc2",
-      "way_lat": "36.04604928819296",
-      "way_lng": "14.238703424427657",
+      "way_name": "Sherries",
+      "way_shortDesc": "The towering Cittadella sits high above the city of Victoria in Gozo.It’s the first thing you’ll see if you’re visiting the city. Discover more to learn about the magnificent structure",
+      "way_description": "Towering high above Victoria, the capital city of Gozo, sits a majestic fortified town known locally as the Cittadella. This prominent landmark is the first thing you see in Victoria. If you’re booking flights to Malta add this to your to-do list, you won’t be disappointed. Embark on an adventure through 3000 years of history!\n\n\n\nIf you are planning to visit the Cittadella, you’ll be pleasantly surprised to hear that it’s now looking better than it ever has. An extensive 5 year restoration project of the site was completed earlier this year leaving the Cittadella looking absolutely amazing. This massive project was undertaken to clean up the ruins and restore many of the buildings to their former glory. Interestingly, the excavation works unearthed many previously unseen parts of the Cittadella such as the original entrance and many underground tunnels. The Cittadella, in its renovated state, now stands proudly in silent watch over Victoria.",
+      "way_lat": "35.92653",
+      "way_lng": "14.41604",
       "imgs": [
         {
-          "url": "img4.jpg"
+          "url": "img1.jpg"
         },
         {
-          "url": "img5.jpg"
+          "url": "img2.jpg"
         },
         {
-          "url": "img6.jpg"
+          "url": "img3.jpg"
+        }
+      ]
+    },
+    {
+      "way_id": "81",
+      "way_type": "3",
+      "way_name": "Sirens FC",
+      "way_shortDesc": "The towering Cittadella sits high above the city of Victoria in Gozo.It’s the first thing you’ll see if you’re visiting the city. Discover more to learn about the magnificent structure",
+      "way_description": "Towering high above Victoria, the capital city of Gozo, sits a majestic fortified town known locally as the Cittadella. This prominent landmark is the first thing you see in Victoria. If you’re booking flights to Malta add this to your to-do list, you won’t be disappointed. Embark on an adventure through 3000 years of history!\n\n\n\nIf you are planning to visit the Cittadella, you’ll be pleasantly surprised to hear that it’s now looking better than it ever has. An extensive 5 year restoration project of the site was completed earlier this year leaving the Cittadella looking absolutely amazing. This massive project was undertaken to clean up the ruins and restore many of the buildings to their former glory. Interestingly, the excavation works unearthed many previously unseen parts of the Cittadella such as the original entrance and many underground tunnels. The Cittadella, in its renovated state, now stands proudly in silent watch over Victoria.",
+      "way_lat": "35.94565",
+      "way_lng": "14.41482",
+      "imgs": [
+        {
+          "url": "img1.jpg"
+        },
+        {
+          "url": "img2.jpg"
+        },
+        {
+          "url": "img3.jpg"
+        }
+      ]
+    },
+    {
+      "way_id": "83",
+      "way_type": "3",
+      "way_name": "Cirkewwa Ferry",
+      "way_shortDesc": "The towering Cittadella sits high above the city of Victoria in Gozo.",
+      "way_description": "Towering high above Victoria, the capital city of Gozo, sits a majestic fortified town known locally as the Cittadella. This prominent landmark is the first thing you see in Victoria. If you’re booking flights to Malta add this to your to-do list, you won’t be disappointed. Embark on an adventure through 3000 years of history!\n\n\n\nIf you are planning to visit the Cittadella, you’ll be pleasantly surprised to hear that it’s now looking better than it ever has. An extensive 5 year restoration project of the site was completed earlier this year leaving the Cittadella looking absolutely amazing. This massive project was undertaken to clean up the ruins and restore many of the buildings to their former glory. Interestingly, the excavation works unearthed many previously unseen parts of the Cittadella such as the original entrance and many underground tunnels. The Cittadella, in its renovated state, now stands proudly in silent watch over Victoria.",
+      "way_lat": "35.98753",
+      "way_lng": "14.329",
+      "imgs": [
+        {
+          "url": "img1.jpg"
+        },
+        {
+          "url": "img2.jpg"
+        },
+        {
+          "url": "img3.jpg"
+        }
+      ]
+    },
+    {
+      "way_id": "84",
+      "way_type": "3",
+      "way_name": "Scotts",
+      "way_shortDesc": "The towering Cittadella sits high above the city of Victoria in Gozo.",
+      "way_description": "Towering high above Victoria, the capital city of Gozo, sits a majestic fortified town known locally as the Cittadella. This prominent landmark is the first thing you see in Victoria. If you’re booking flights to Malta add this to your to-do list, you won’t be disappointed. Embark on an adventure through 3000 years of history!\n\n\n\nIf you are planning to visit the Cittadella, you’ll be pleasantly surprised to hear that it’s now looking better than it ever has. An extensive 5 year restoration project of the site was completed earlier this year leaving the Cittadella looking absolutely amazing. This massive project was undertaken to clean up the ruins and restore many of the buildings to their former glory. Interestingly, the excavation works unearthed many previously unseen parts of the Cittadella such as the original entrance and many underground tunnels. The Cittadella, in its renovated state, now stands proudly in silent watch over Victoria.",
+      "way_lat": "35.937",
+      "way_lng": "14.411",
+      "imgs": [
+        {
+          "url": "img1.jpg"
+        },
+        {
+          "url": "img2.jpg"
+        },
+        {
+          "url": "img3.jpg"
         }
       ]
     }

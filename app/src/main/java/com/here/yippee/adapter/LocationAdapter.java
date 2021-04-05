@@ -3,6 +3,7 @@ package com.here.yippee.adapter;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,11 +63,7 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.Locati
         if (wayLocation.getWayShortDesc() != null && !wayLocation.getWayShortDesc().equals("null")) {
             holder.tvShortDesc.setText(wayLocation.getWayShortDesc());
         } else {
-            if (wayLocation.getWayDesc().length() > 20) {
-                holder.tvShortDesc.setText(wayLocation.getWayDesc().substring(0, 18) + "...");
-            } else {
-                holder.tvShortDesc.setText(wayLocation.getWayDesc());
-            }
+            holder.tvShortDesc.setText(wayLocation.getWayDesc());
         }
         holder.tvLocationName.setText(locations.get(position).getWayName());
         if (location != null) {
