@@ -35,7 +35,8 @@ public class SplashActivity extends AppCompatActivity {
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.INTERNET,
             Manifest.permission.ACCESS_WIFI_STATE,
-            Manifest.permission.ACCESS_NETWORK_STATE
+            Manifest.permission.ACCESS_NETWORK_STATE,
+            Manifest.permission.READ_PHONE_STATE,
     };
 
     @Override
@@ -73,10 +74,10 @@ public class SplashActivity extends AppCompatActivity {
                     if (grantResults[index] != PackageManager.PERMISSION_GRANTED) {
                         if (!ActivityCompat
                                 .shouldShowRequestPermissionRationale(this, permissions[index])) {
-                            Toast.makeText(this, "Required permission " + permissions[index]
+                            /*Toast.makeText(this, "Required permission " + permissions[index]
                                             + " not granted. "
-                                            + "Please go to settings and turn on for sample app",
-                                    Toast.LENGTH_LONG).show();
+                                            + "Please go to settings and turn on for this app",
+                                    Toast.LENGTH_LONG).show();*/
                         } else {
                             Toast.makeText(this, "Required permission " + permissions[index]
                                     + " not granted", Toast.LENGTH_LONG).show();

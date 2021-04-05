@@ -87,7 +87,8 @@ public class MapActivity extends AppCompatActivity implements PositioningManager
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.INTERNET,
             Manifest.permission.ACCESS_WIFI_STATE,
-            Manifest.permission.ACCESS_NETWORK_STATE
+            Manifest.permission.ACCESS_NETWORK_STATE,
+            Manifest.permission.READ_PHONE_STATE,
     };
 
     // ui elements
@@ -161,10 +162,10 @@ public class MapActivity extends AppCompatActivity implements PositioningManager
                     if (grantResults[index] != PackageManager.PERMISSION_GRANTED) {
                         if (!ActivityCompat
                                 .shouldShowRequestPermissionRationale(this, permissions[index])) {
-                            Toast.makeText(this, "Required permission " + permissions[index]
+                            /*Toast.makeText(this, "Required permission " + permissions[index]
                                             + " not granted. "
-                                            + "Please go to settings and turn on for sample app",
-                                    Toast.LENGTH_LONG).show();
+                                            + "Please go to settings and turn on for this app",
+                                    Toast.LENGTH_LONG).show();*/
                         } else {
                             Toast.makeText(this, "Required permission " + permissions[index]
                                     + " not granted", Toast.LENGTH_LONG).show();
@@ -321,8 +322,10 @@ public class MapActivity extends AppCompatActivity implements PositioningManager
                 coreRouter = new CoreRouter();
                 if (ConnectionUtil.isNetworkAvailable(this)) {
                     coreRouter.setConnectivity(CoreRouter.Connectivity.DEFAULT);
+                    Log.e("MapActivity", "Connected!------------");
                 } else {
                     coreRouter.setConnectivity(CoreRouter.Connectivity.OFFLINE);
+                    Log.e("MapActivity", "Offline!------------");
                 }
 
                 // start getting location
